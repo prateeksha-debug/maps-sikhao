@@ -1,0 +1,86 @@
+line_id,text
+L01,Namaste! I am Parul — your Relationship Manager.
+L02,"Today we will learn Google Maps together. It takes just eight minutes, and it is fun too."
+L03,"First, one important thing — reading and writing are not needed at all. Just recognise colours and icons."
+L04,"Green board, blue arrow, red balloon. With these three things you can reach anywhere."
+L05,"And at the end there will be five small questions. I will ask the question, and you have to tap the right answer on the screen — press it with your finger."
+L06,"If you get one wrong, no problem. You can try as many times as you like. Let us begin — keep the sound on."
+L07,"This is your app. At the very top, today’s date — the twenty-eighth of July."
+L08,This green card — it says “Chal Raha Hai”. It means this job is going on right now.
+L09,"And this white card — “Aane Wala”. This is your next job, at Sameer ji’s home."
+L10,"To open that job, tap this arrow button. Just once."
+L11,The job is open. The clock at the top says — you must reach in fifty-five minutes.
+L12,Here is the customer’s name and full address. Do not try to read it — no need.
+L13,"This green phone icon — to talk to the customer. If you have trouble finding the house, call from right here."
+L14,"And now the most important thing. Look at this — the colourful icon. Green, yellow, blue, with a small red balloon on top."
+L15,"This is Google Maps. Next to it, it says “Directions”. Tap it once, and Maps will open by itself."
+L16,And this purple button at the bottom — “Mark Aa Gaya”. Press it only when you reach the customer’s home. Not now. Remember — purple means you have arrived.
+L17,"Maps is open. You can see two lines at the top — the first is your location, the second is the customer’s address."
+L18,This blue round dot — you are standing right here at this moment.
+L19,And this red balloon — the customer’s home. This is where you have to reach.
+L20,"And this line of blue dots in the middle — this is your route. Just walk along it, that is all."
+L21,"You will also see light grey lines. Those are other routes, a little longer. Ignore them — the dark blue line is yours."
+L22,"Look at the top — car, bike, bus, and a walking man."
+L23,"You are going on foot, so tap the walking man icon. It turned blue — that means it is selected."
+L24,"It says twenty-four minutes here, and the distance is about two kilometers. Meaning it will take twenty-four minutes on foot."
+L25,"And now the most important button — this dark green button at the bottom left. Press it. From here, Maps starts speaking and guiding you."
+L26,"Look, the journey has started. This green board on top — the most useful thing. It shows your next turn."
+L27,This straight-up arrow on the board — means keep going straight. No turning.
+L28,"And below it, a small left arrow — meaning after that, turn left. Maps tells you in advance."
+L29,"This blue arrow — this is you. As you walk, the arrow moves forward with you."
+L30,"And on top, the same red balloon — the customer’s home. Take the arrow to the balloon."
+L31,"On the right, this speaker icon. If you cannot hear the voice, tap it once. Then Maps will speak — “In two hundred meters, turn left.”"
+L32,"If the map shifts around and the blue arrow stops being visible, press this white button on the left. The blue arrow will come back to the centre."
+L33,At the bottom you can always see — how much time and distance is left.
+L34,And this red button — for closing the route. Never press it before you reach the customer’s home.
+L35,Now practice. First one — easy. I will walk you through it.
+L36,The board says go straight. So look — the blue arrow is moving ahead on the blue dots.
+L37,Now the board changed — a left arrow. It means turn left from here.
+L38,"And the arrow turned. That is all there is to Maps — watch the board, keep walking."
+L39,Second practice — a little harder. Watch carefully.
+L40,There is a place here where the road ahead is also open. Your mind will say — keep going straight.
+L41,"But the board shows a left arrow. If you keep going straight — look, the arrow turned red. You left the route."
+L42,"So remember — trust the board and the voice, not your eyes. Do what Maps says. That is the biggest lesson."
+L43,Third practice — the hardest. But there is nothing to fear.
+L44,Suppose the phone is in your pocket and the screen turns off. Do not worry — the voice keeps playing. Maps keeps speaking.
+L45,"Take out the phone, turn on the screen — the route is right where you left it. Nothing is lost."
+L46,Now one more fear. Suppose you miss the turn and walk into the wrong lane.
+L47,Watch what happens. Maps does not get angry. It quietly makes a new route for you — this new blue line.
+L48,"So when you take a wrong turn, do not stop, do not run back. Just keep walking and watch the new blue line."
+L49,Keep walking... just a little more... and now the arrow is reaching the red balloon.
+L50,You have arrived! You are standing outside the customer’s home. Maps’ work is done.
+L51,Now come back to your app and press the purple button at the bottom — “Mark Aa Gaya”. It means: I have arrived.
+L52,Very good! Now five small questions. I will speak out each question and all the answers. You have to tap the right answer on the screen.
+Q1_ASK,Where does the next turn show?
+Q1_OPT1,Green board on top
+Q1_OPT2,Red button at the bottom
+Q1_OPT3,Speaker on the right
+Q1_OK,Right! The green board shows the next turn.
+Q1_NO,No. The next turn always shows on the green board at the top. Try again.
+Q2_ASK,Who are you on the map?
+Q2_OPT1,Blue arrow
+Q2_OPT2,Red balloon
+Q2_OPT3,Grey line
+Q2_OK,Absolutely right! The blue arrow is you. The red balloon is the customer’s home.
+Q2_NO,No. The red balloon is the customer’s home — you are the blue arrow. Try again.
+Q3_ASK,You cannot hear Maps. What will you press?
+Q3_OPT1,Speaker icon
+Q3_OPT2,Red button at the bottom
+Q3_OPT3,White button on the left
+Q3_OK,Right! Press the speaker and the voice comes back.
+Q3_NO,"No. The red button will close the route. For sound, press the speaker icon. Try again."
+Q4_ASK,Took a wrong turn. What will you do now?
+Q4_OPT1,"Keep walking, Maps will make a new route"
+Q4_OPT2,Press the red button and close Maps
+Q4_OPT3,Run back to the same spot
+Q4_OK,Exactly right! Maps makes a new route by itself. Just keep walking.
+Q4_NO,No. There is no need to close Maps or run back. Keep walking — a new route will form on its own.
+Q5_ASK,You reached the customer’s home. What will you press in the app?
+Q5_OPT1,Purple button at the bottom
+Q5_OPT2,Green phone icon
+Q5_OPT3,Emergency at the top
+Q5_OK,Right! The purple button — “Mark Aa Gaya”.
+Q5_NO,"No. On arriving, press the purple button at the bottom. Try again."
+TAP_NOW,Now tap the right answer.
+CERT_FULL,Shabash! Five out of five. You have learnt Maps.
+CERT_PART,Very good! You got some questions right on the first try. You can retake the quiz if you like.
