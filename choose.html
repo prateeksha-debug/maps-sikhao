@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maps Sikhao — भाषा चुनें</title>
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: system-ui, -apple-system, "Noto Sans", sans-serif; background: #0e1320;
+         min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; }
+  .card { width: 100%; max-width: 400px; background: #171e2e; border-radius: 20px; padding: 28px 22px 22px; }
+  .avatar { width: 64px; height: 64px; border-radius: 50%; background: #7c5cff; color: #fff;
+            font-size: 30px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin: 0 auto 14px; }
+  h1 { color: #fff; font-size: 22px; text-align: center; }
+  p.sub { color: #9aa4bd; font-size: 14px; text-align: center; margin: 8px 0 22px; line-height: 1.5; }
+  a.lang { display: flex; align-items: center; justify-content: space-between; text-decoration: none;
+           background: #202a41; color: #fff; border-radius: 14px; padding: 16px 18px; margin-bottom: 12px;
+           font-size: 20px; font-weight: 600; border: 2px solid transparent; }
+  a.lang small { color: #9aa4bd; font-size: 13px; font-weight: 400; }
+  a.lang.suggested { border-color: #7c5cff; background: #26304c; }
+  a.lang .tick { color: #7c5cff; font-size: 18px; visibility: hidden; }
+  a.lang.suggested .tick { visibility: visible; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="avatar">प</div>
+  <h1>अपनी भाषा चुनें</h1>
+  <p class="sub">Choose your language · உங்கள் மொழியை தேர்ந்தெடுங்கள்<br>ನಿಮ್ಮ ಭಾಷೆ ಆರಿಸಿ · మీ భాషను ఎంచుకోండి</p>
+  <a class="lang" data-code="hi" href="./"        >हिन्दी      <span><small>Hindi</small> <span class="tick">✓</span></span></a>
+  <a class="lang" data-code="en" href="./en.html" >English     <span><small>English</small> <span class="tick">✓</span></span></a>
+  <a class="lang" data-code="ta" href="./ta.html" >தமிழ்       <span><small>Tamil</small> <span class="tick">✓</span></span></a>
+  <a class="lang" data-code="kn" href="./kn.html" >ಕನ್ನಡ       <span><small>Kannada</small> <span class="tick">✓</span></span></a>
+  <a class="lang" data-code="te" href="./te.html" >తెలుగు      <span><small>Telugu</small> <span class="tick">✓</span></span></a>
+</div>
+<script>
+  // Highlight priority: last explicit choice > backend suggestion (?suggest=hi) > none.
+  var params = new URLSearchParams(location.search);
+  var suggest = (localStorage.getItem('maps_sikhao_lang') || params.get('suggest') || '').toLowerCase();
+  var links = document.querySelectorAll('a.lang');
+  links.forEach(function (a) {
+    if (a.dataset.code === suggest) a.classList.add('suggested');
+    a.addEventListener('click', function () {
+      try { localStorage.setItem('maps_sikhao_lang', a.dataset.code); } catch (e) {}
+    });
+  });
+  // Pass any extra params (e.g. name) through to the chosen build.
+  params.delete('suggest');
+  var qs = params.toString();
+  if (qs) links.forEach(function (a) { a.href += (a.href.indexOf('?') > -1 ? '&' : '?') + qs; });
+</script>
+</body>
+</html>
